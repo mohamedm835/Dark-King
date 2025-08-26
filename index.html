@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark King - الصفحة الرئيسية</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Cairo', 'Tajawal', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center space-x-0 space-x-reverse">
+          <a href="#" class="flex items-center gap-3">
+            <span class="text-2xl font-extrabold tracking-tight text-gray-900 flex items-center">
+              <i class="fa-solid fa-crown text-yellow-500 ml-2 animate-bounce" aria-hidden="true"></i>
+              <span class="text-xl">dark</span>
+              <span class="text-blue-900"> king</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center gap-4 flex-wrap">
+          <a href="#support" class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium">
+            <i class="fa-regular fa-circle-question"></i> الدعم
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium">
+            <i class="fa-solid fa-comments"></i> تواصل
+          </a>
+          <a href="#shop" class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium">
+            <i class="fa-solid fa-store"></i> التسوّق
+          </a>
+          <div class="relative">
+            <input type="search" placeholder="ابحث" class="w-56 sm:w-40 md:w-56 py-2 px-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500" />
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          </div>
+        </nav>
+
+        <!-- Cart + Mobile -->
+        <div class="flex items-center gap-4">
+          <a href="#cart" class="relative inline-flex items-center p-2 rounded-lg hover:bg-gray-100">
+            <i class="fa-solid fa-shopping-cart text-lg"></i>
+            <span class="sr-only">سلة الطلبات</span>
+            <span class="absolute -top-1 -left-2 bg-red-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full">3</span>
+          </a>
+          <button id="mobileBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100">
+      <div class="px-4 pt-3 pb-4 space-y-2 flex flex-col">
+        <a href="#shop" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3"><i class="fa-solid fa-store"></i> <span>التسوّق</span></div>
+          <span class="text-sm text-gray-500">المتجر</span>
+        </a>
+        <a href="#support" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3"><i class="fa-regular fa-circle-question"></i> <span>الدعم</span></div>
+          <span class="text-sm text-gray-500">مساعدة</span>
+        </a>
+        <a href="#contact" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3"><i class="fa-solid fa-comments"></i> <span>تواصل</span></div>
+          <span class="text-sm text-gray-500">راسلنا</span>
+        </a>
+        <a href="#cart" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3"><i class="fa-solid fa-shopping-cart"></i> <span>سلة الطلبات</span></div>
+          <span class="text-sm text-red-500 font-semibold">3 منتجات</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center">مرحبا بك في Dark King</h1>
+    <p class="text-gray-600 mb-6 text-center">هذا مثال لصفحة رئيسية مع ناف بار بسيطة وعصرية مبنية بتايلويند.</p>
+
+    <!-- Example Cards -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="p-4 bg-white rounded-2xl shadow-sm">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">خدمات الدعم</h3>
+          <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-sm">مباشر</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">استفسر عن الطلبات، الشحن، أو الضمان.</p>
+      </div>
+      <div class="p-4 bg-white rounded-2xl shadow-sm">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">التواصل</h3>
+          <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-sm">واتساب</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">مراسلتنا عبر النموذج أو رقم الهاتف.</p>
+      </div>
+      <div class="p-4 bg-white rounded-2xl shadow-sm">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">سلة الطلبات</h3>
+          <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-sm">3 عناصر</span>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">عرض المنتجات المضافة وعملية الدفع.</p>
+      </div>
+    </section>
+
+    <!-- Dark King Section -->
+    <section class="mb-16">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold mb-4">عن Dark King</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">منصة تدريبية تهدف لبناء جسم صحي ومتناسق، نساعدك على تحسين لياقتك البدنية من خلال برامج شاملة وخدمات احترافية مصممة خصيصاً لك. معنا ستصل إلى أهدافك بخطوات واضحة وبطريقة ممتعة.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        <!-- Service Card -->
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-dumbbell text-3xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">خطط تدريب شخصية</h3>
+          <p class="text-gray-500 text-sm">برامج تدريب مصممة خصيصاً لمستواك وأهدافك.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-apple-whole text-3xl text-green-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">تغذية صحية</h3>
+          <p class="text-gray-500 text-sm">خطط غذائية متوازنة لبناء العضلات وحرق الدهون.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-heart-pulse text-3xl text-red-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">متابعة لياقة</h3>
+          <p class="text-gray-500 text-sm">متابعة تقدمك الصحي والبدني بشكل مستمر.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-users text-3xl text-purple-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">مجتمع داعم</h3>
+          <p class="text-gray-500 text-sm">انضم إلى مجتمع متحمس يشاركك نفس الأهداف.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-chart-line text-3xl text-yellow-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">تتبع الأداء</h3>
+          <p class="text-gray-500 text-sm">إحصائيات وتقارير لمراقبة إنجازاتك خطوة بخطوة.</p>
+        </div>
+
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-medal text-3xl text-pink-600 mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">نتائج مضمونة</h3>
+          <p class="text-gray-500 text-sm">طرق فعالة لتحقيق أفضل النتائج بشكل سريع وآمن.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Working Hours Section -->
+    <section class="mb-16">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold mb-4">أوقات العمل</h2>
+        <p class="text-gray-600">نلتزم بتقديم خدماتنا في الأوقات التالية:</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-calendar-day text-2xl text-blue-600 mb-3"></i>
+          <h3 class="font-semibold text-lg mb-2">السبت - الإثنين - الأربعاء</h3>
+          <p class="text-gray-500 text-sm">من الساعة 9:00 إلى 10:00 صباحاً</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+          <i class="fa-solid fa-clock text-2xl text-green-600 mb-3"></i>
+          <h3 class="font-semibold text-lg mb-2">الأحد - الثلاثاء - الخميس</h3>
+          <p class="text-gray-500 text-sm">من الساعة 2:00 ظهراً إلى 10:00 مساءً</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Systems Section -->
+<section class="mb-16">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold mb-4">أفضل الأنظمة التدريبية</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">اختر نظامك التدريبي لبناء جسم متكامل وصحي، كل نظام يحتوي على تمارين بسيطة وفعالة.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <!-- Chest -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-dumbbell text-3xl text-blue-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">🦾 نظام الصدر الفولاذي | Iron Chest</h3>
+      <p class="text-gray-500 text-sm mb-3">تمارين سريعة لبناء صدر قوي وممتلئ.</p>
+      <div class="flex flex-wrap justify-center gap-2 text-xs">
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Bench Press 3×10</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Incline Dumbbell 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Dumbbell Fly 3×15</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Push Ups 3×Max</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Cable Crossover 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Chest Dips 3×12</span>
+      </div>
+    </div>
+
+    <!-- Back -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-person-swimming text-3xl text-green-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">💪 نظام الظهر العريض | Wide Back</h3>
+      <p class="text-gray-500 text-sm mb-3">روتين مختصر لظهر قوي وعريض.</p>
+      <div class="flex flex-wrap justify-center gap-2 text-xs">
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Pull Ups 3×Max</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Lat Pull Down 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Barbell Row 3×10</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Dumbbell Row 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">T-Bar Row 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Deadlift 3×8</span>
+      </div>
+    </div>
+
+    <!-- Legs -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-shoe-prints text-3xl text-red-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">🦿 نظام القوة السفلية | Lower Body</h3>
+      <p class="text-gray-500 text-sm mb-3">حركات مركزة لتقوية الأرجل والتحمل.</p>
+      <div class="flex flex-wrap justify-center gap-2 text-xs">
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Squats 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Lunges 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Deadlift 3×10</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Leg Press 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Calf Raises 3×20</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Leg Curl 3×12</span>
+      </div>
+    </div>
+
+    <!-- Shoulders -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-weight-hanging text-3xl text-purple-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">🏋️ نظام الأكتاف الحديدية | Iron Shoulders</h3>
+      <p class="text-gray-500 text-sm mb-3">خطوات فعالة لبناء أكتاف متناسقة.</p>
+      <div class="flex flex-wrap justify-center gap-2 text-xs">
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Overhead Press 3×10</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Lateral Raises 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Front Raises 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Face Pulls 3×15</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Arnold Press 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Shrugs 3×15</span>
+      </div>
+    </div>
+
+    <!-- Arms -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-hand-fist text-3xl text-yellow-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">💥 نظام الذراع القوي | Arm Power</h3>
+      <p class="text-gray-500 text-sm mb-3">روتين قصير لتضخيم الذراعين.</p>
+      <div class="flex flex-wrap justify-center gap-2 text-xs">
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Barbell Curl 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Hammer Curl 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Skull Crushers 3×10</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Triceps Pushdown 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Preacher Curl 3×12</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Overhead Triceps 3×12</span>
+      </div>
+    </div>
+
+    <!-- Core -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-fire-flame-curved text-3xl text-pink-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">🔥 نظام الكور المتين | Core Stability</h3>
+      <p class="text-gray-500 text-sm mb-3">أساسيات لبناء بطن صلب وثابت.</p>
+      <div class="flex flex-wrap justify-center gap-2 text-xs">
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Plank 3×60s</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Russian Twist 3×20</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Leg Raises 3×15</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Mountain Climbers 3×40s</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Bicycle Crunch 3×20</span>
+        <span class="px-3 py-1 bg-gray-100 rounded-full">Side Plank 3×30s</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   <!-- Calories & Macros Section -->
+<section class="mb-16">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold mb-4">حسابات التغذية</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">استخدم الأدوات التالية لحساب السعرات والجرامات التي يحتاجها جسمك يومياً.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    
+    <!-- Calories Calculator -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-burger text-3xl text-orange-500 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">🔥 حاسبة السعرات الحرارية</h3>
+      <p class="text-gray-500 text-sm mb-3">أدخل بياناتك لحساب احتياجاتك اليومية من السعرات.</p>
+      <form id="calorie-form" class="text-sm space-y-3">
+        <input type="number" id="cal-weight" placeholder="الوزن (كجم)" class="w-full px-3 py-2 border rounded-xl">
+        <input type="number" id="cal-height" placeholder="الطول (سم)" class="w-full px-3 py-2 border rounded-xl">
+        <input type="number" id="cal-age" placeholder="العمر" class="w-full px-3 py-2 border rounded-xl">
+        <select id="cal-gender" class="w-full px-3 py-2 border rounded-xl">
+          <option value="male">ذكر</option>
+          <option value="female">أنثى</option>
+        </select>
+        <div class="flex gap-3">
+          <button type="button" id="calc-calories" class="flex-1 bg-orange-500 text-white py-2 rounded-xl">احسب السعرات</button>
+          <button type="reset" class="flex-1 bg-gray-300 text-gray-800 py-2 rounded-xl">إعادة تعيين</button>
+        </div>
+        <p id="calorie-result" class="text-green-600 font-semibold mt-2"></p>
+      </form>
+    </div>
+
+    <!-- Macros Calculator -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-apple-whole text-3xl text-green-500 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">🥗 حاسبة الماكروز</h3>
+      <p class="text-gray-500 text-sm mb-3">اعرف كمية البروتين، الكربوهيدرات والدهون اليومية.</p>
+      <form id="macros-form" class="text-sm space-y-3">
+        <input type="number" id="mac-weight" placeholder="الوزن (كجم)" class="w-full px-3 py-2 border rounded-xl">
+        <input type="number" id="protein" placeholder="نسبة البروتين (جرام/كجم)" class="w-full px-3 py-2 border rounded-xl">
+        <input type="number" id="carbs" placeholder="نسبة الكربوهيدرات (جرام/كجم)" class="w-full px-3 py-2 border rounded-xl">
+        <input type="number" id="fats" placeholder="نسبة الدهون (جرام/كجم)" class="w-full px-3 py-2 border rounded-xl">
+        <div class="flex gap-3">
+          <button type="button" id="calc-macros" class="flex-1 bg-green-500 text-white py-2 rounded-xl">احسب الماكروز</button>
+          <button type="reset" class="flex-1 bg-gray-300 text-gray-800 py-2 rounded-xl">إعادة تعيين</button>
+        </div>
+        <p id="macros-result" class="text-blue-600 font-semibold mt-2"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="mb-16">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold mb-4">❓ الأسئلة الشائعة</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">إجابات على أكثر الأسئلة المتكررة حول التمارين والتغذية.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <!-- FAQ 1 -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-dumbbell text-3xl text-blue-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">كم مرة أتمرن بالأسبوع؟</h3>
+      <p class="text-gray-500 text-sm">يفضل 3-5 مرات أسبوعياً لتحقيق نتائج جيدة بدون إرهاق.</p>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-apple-whole text-3xl text-green-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">هل أحتاج مكملات غذائية؟</h3>
+      <p class="text-gray-500 text-sm">المكملات ليست ضرورية، الأهم هو التغذية المتوازنة.</p>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center">
+      <i class="fa-solid fa-stopwatch text-3xl text-red-600 mb-4"></i>
+      <h3 class="font-semibold text-lg mb-2">أفضل وقت للتمرين؟</h3>
+      <p class="text-gray-500 text-sm">اختر الوقت الأنسب لك، الأهم هو الالتزام والاستمرارية.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="mb-16">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold mb-4">📊 إحصائيات Dark King</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">أرقامنا تتحدث عن نجاحنا!</p>
+  </div>
+
+  <div class="flex flex-col items-center space-y-6">
+    <!-- Top Card -->
+    <div class="p-6 bg-white rounded-2xl shadow-md text-center w-64">
+      <i class="fa-solid fa-users text-3xl text-blue-600 mb-3"></i>
+      <h3 class="font-semibold text-lg mb-2">+1200 عميل</h3>
+      <p class="text-gray-500 text-sm">عملاء راضون عن خدماتنا.</p>
+    </div>
+
+    <!-- Bottom Two Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="p-6 bg-white rounded-2xl shadow-md text-center w-64">
+        <i class="fa-solid fa-dumbbell text-3xl text-orange-600 mb-3"></i>
+        <h3 class="font-semibold text-lg mb-2">+350 منتج</h3>
+        <p class="text-gray-500 text-sm">معدات وبرامج تدريبية متنوعة.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-2xl shadow-md text-center w-64">
+        <i class="fa-solid fa-star text-3xl text-yellow-600 mb-3"></i>
+        <h3 class="font-semibold text-lg mb-2">+85 خدمة</h3>
+        <p class="text-gray-500 text-sm">تجارب عملاء ناجحة ومميزة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+    <footer class="w-full mt-16 border-t border-gray-300 pt-6">
+      <nav class="mb-4">
+        <ul class="flex flex-col sm:flex-row flex-wrap justify-center gap-6 text-gray-600 text-sm">
+          <li><a href="#" class="flex items-center gap-1 hover:text-blue-500">🏠 <span>الرئيسية</span></a></li>
+          <li><a href="#shop" class="flex items-center gap-1 hover:text-blue-500">🛒 <span>التسوق</span></a></li>
+          <li><a href="#support" class="flex items-center gap-1 hover:text-blue-500">💬 <span>الدعم</span></a></li>
+          <li><a href="#contact" class="flex items-center gap-1 hover:text-blue-500">📞 <span>تواصل معنا</span></a></li>
+        </ul>
+      </nav>
+      <p class="text-center text-gray-500 text-xs flex items-center justify-center gap-1">
+        <span class="animate-bounce">👑</span> Dark King © 2025 جميع الحقوق محفوظة
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Calories Calculator
+  document.getElementById("calc-calories").addEventListener("click", function () {
+    const weight = parseFloat(document.getElementById("cal-weight").value);
+    const height = parseFloat(document.getElementById("cal-height").value);
+    const age = parseFloat(document.getElementById("cal-age").value);
+    const gender = document.getElementById("cal-gender").value;
+
+    if (!weight || !height || !age) {
+      document.getElementById("calorie-result").innerText = "❌ من فضلك أدخل كل البيانات";
+      return;
+    }
+
+    let bmr;
+    if (gender === "male") {
+      bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+    } else {
+      bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+    }
+
+    const calories = Math.round(bmr * 1.55); // متوسط النشاط
+    document.getElementById("calorie-result").innerText = `✅ احتياجك اليومي: ${calories} سعرة حرارية`;
+  });
+
+  // Reset Calories
+  document.getElementById("calorie-form").addEventListener("reset", function () {
+    document.getElementById("calorie-result").innerText = "";
+  });
+
+  // Macros Calculator
+  document.getElementById("calc-macros").addEventListener("click", function () {
+    const weight = parseFloat(document.getElementById("mac-weight").value);
+    const protein = parseFloat(document.getElementById("protein").value);
+    const carbs = parseFloat(document.getElementById("carbs").value);
+    const fats = parseFloat(document.getElementById("fats").value);
+
+    if (!weight || !protein || !carbs || !fats) {
+      document.getElementById("macros-result").innerText = "❌ من فضلك أدخل كل البيانات";
+      return;
+    }
+
+    const totalProtein = weight * protein;
+    const totalCarbs = weight * carbs;
+    const totalFats = weight * fats;
+
+    document.getElementById("macros-result").innerText = 
+      `🍗 بروتين: ${totalProtein} ج | 🍞 كارب: ${totalCarbs} ج | 🥑 دهون: ${totalFats} ج`;
+  });
+
+  // Reset Macros
+  document.getElementById("macros-form").addEventListener("reset", function () {
+    document.getElementById("macros-result").innerText = "";
+  });
+
+  </script>
+</body>
+</html>

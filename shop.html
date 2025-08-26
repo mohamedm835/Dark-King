@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark King - الصفحة الرئيسية</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- NAVBAR -->
+  <header class="w-full bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-0 space-x-reverse">
+        <a href="#" class="flex items-center gap-3">
+          <span class="text-2xl font-extrabold tracking-tight text-gray-900 flex items-center">
+            <i class="fa-solid fa-crown text-yellow-500 ml-2 animate-bounce" aria-hidden="true"></i>
+            <span class="text-xl">dark</span>
+            <span class="text-blue-900"> king</span>
+          </span>
+        </a>
+      </div>
+
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center gap-4">
+          <!-- chips links -->
+          <a href="#support" class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium">
+            <i class="fa-regular fa-circle-question"></i>
+            الدعم
+          </a>
+
+          <a href="#contact" class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium">
+            <i class="fa-solid fa-comments"></i>
+            تواصل
+          </a>
+
+          <a href="#shop" class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-medium">
+            <i class="fa-solid fa-store"></i>
+            التسوّق
+          </a>
+
+          <!-- Search (optional) -->
+          <div class="relative">
+            <input type="search" placeholder="ابحث" class="w-56 py-2 px-3 rounded-full border border-gray-200 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500" />
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+          </div>
+        </nav>
+
+        <!-- Right side (cart + mobile) -->
+        <div class="flex items-center gap-4">
+          <!-- Cart -->
+          <a href="#cart" class="relative inline-flex items-center p-2 rounded-lg hover:bg-gray-100">
+            <i class="fa-solid fa-shopping-cart text-lg"></i>
+            <span class="sr-only">سلة الطلبات</span>
+            <span class="absolute -top-1 -left-2 bg-red-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full">3</span>
+          </a>
+
+          <!-- Mobile menu button -->
+          <button id="mobileBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100">
+      <div class="px-4 pt-3 pb-4 space-y-2">
+        <a href="#shop" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-store"></i>
+            <span>التسوّق</span>
+          </div>
+          <span class="text-sm text-gray-500">المتجر</span>
+        </a>
+
+        <a href="#support" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>الدعم</span>
+          </div>
+          <span class="text-sm text-gray-500">مساعدة</span>
+        </a>
+
+        <a href="#contact" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-comments"></i>
+            <span>تواصل</span>
+          </div>
+          <span class="text-sm text-gray-500">راسلنا</span>
+        </a>
+
+        <a href="#cart" class="flex items-center justify-between w-full px-3 py-2 rounded-lg hover:bg-gray-50">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span>سلة الطلبات</span>
+          </div>
+          <span class="text-sm text-red-500 font-semibold">3 منتجات</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+ <!-- Shop Section -->
+<section class="mb-16 mt-16"> <!-- ضفت mt-16 لمسافة من فوق -->
+  <div class="text-center mb-10">
+    <h2 class="text-3xl font-bold mb-4">🛒 تسوق منتجات Dark King</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      اكتشف أفضل الأدوات والبرامج التدريبية لتعزيز لياقتك وبناء جسم متناسق بكل سهولة ومتعة.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center">
+
+    <!-- Product 1 -->
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col items-center w-80 h-[32rem]"> <!-- زودت ارتفاع الكرت -->
+      <img src="23338.jpg" alt="Product 1" class="rounded-xl mb-4 w-60 h-60 object-cover"> <!-- كبرت الصورة -->
+      <h3 class="font-extrabold text-xl mb-1 text-center truncate">حزام تدريب احترافي</h3>
+      <p class="text-gray-500 mb-2 text-center text-sm truncate">يدعم ظهرك أثناء التمارين الثقيلة.</p>
+      <span class="block font-bold text-blue-600 mb-4 text-lg">350 جنيه</span>
+      <div class="flex flex-col gap-3 w-full mt-auto">
+        <button class="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition w-full">
+          <i class="fa-solid fa-cart-plus"></i> أضف إلى السلة
+        </button>
+        <a href="https://wa.me/201234567890" target="_blank" class="flex items-center justify-center gap-2 text-green-600 font-bold py-3 border border-green-600 rounded-xl w-full no-underline hover:no-underline">
+  <i class="fa-solid fa-comment-dots"></i> تواصل للشراء
+</a>
+
+      </div>
+    </div>
+
+    <!-- نفس التعديلات هتتطبق على باقي الكروت -->
+    <!-- Product 2 -->
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col items-center w-80 h-[32rem]"> <!-- زودت ارتفاع الكرت -->
+      <img src="23338.jpg" alt="Product 1" class="rounded-xl mb-4 w-60 h-60 object-cover"> <!-- كبرت الصورة -->
+      <h3 class="font-extrabold text-xl mb-1 text-center truncate">حزام تدريب احترافي</h3>
+      <p class="text-gray-500 mb-2 text-center text-sm truncate">يدعم ظهرك أثناء التمارين الثقيلة.</p>
+      <span class="block font-bold text-blue-600 mb-4 text-lg">350 جنيه</span>
+      <div class="flex flex-col gap-3 w-full mt-auto">
+        <button class="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition w-full">
+          <i class="fa-solid fa-cart-plus"></i> أضف إلى السلة
+        </button>
+        <a href="https://wa.me/201234567890" target="_blank" class="flex items-center justify-center gap-2 text-green-600 font-bold py-3 border border-green-600 rounded-xl w-full no-underline hover:no-underline">
+  <i class="fa-solid fa-comment-dots"></i> تواصل للشراء
+</a>
+
+      </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col items-center w-80 h-[32rem]"> <!-- زودت ارتفاع الكرت -->
+      <img src="23338.jpg" alt="Product 1" class="rounded-xl mb-4 w-60 h-60 object-cover"> <!-- كبرت الصورة -->
+      <h3 class="font-extrabold text-xl mb-1 text-center truncate">حزام تدريب احترافي</h3>
+      <p class="text-gray-500 mb-2 text-center text-sm truncate">يدعم ظهرك أثناء التمارين الثقيلة.</p>
+      <span class="block font-bold text-blue-600 mb-4 text-lg">350 جنيه</span>
+      <div class="flex flex-col gap-3 w-full mt-auto">
+        <button class="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition w-full">
+          <i class="fa-solid fa-cart-plus"></i> أضف إلى السلة
+        </button>
+        <a href="https://wa.me/201234567890" target="_blank" class="flex items-center justify-center gap-2 text-green-600 font-bold py-3 border border-green-600 rounded-xl w-full no-underline hover:no-underline">
+  <i class="fa-solid fa-comment-dots"></i> تواصل للشراء
+</a>
+
+      </div>
+    </div>
+
+    <!-- باقي المنتجات بنفس الشكل مع w-60 h-60 و h-[32rem] -->
+    
+  </div>
+</section>
+
+
+<!-- ✅ FOOTER MINIMAL WITH EMOJIS -->
+<footer class="w-full mt-16">
+  <!-- خط فاصل -->
+  <div class="border-t border-gray-300 pt-6">
+    
+    <!-- روابط -->
+    <nav class="mb-4">
+      <ul class="flex flex-wrap justify-center gap-6 text-gray-600 text-sm">
+        <li>
+          <a href="#" class="flex items-center gap-1 hover:text-blue-500">
+            🏠 <span>الرئيسية</span>
+          </a>
+        </li>
+        <li>
+          <a href="#shop" class="flex items-center gap-1 hover:text-blue-500">
+            🛒 <span>التسوق</span>
+          </a>
+        </li>
+        <li>
+          <a href="#support" class="flex items-center gap-1 hover:text-blue-500">
+            💬 <span>الدعم</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="flex items-center gap-1 hover:text-blue-500">
+            📞 <span>تواصل معنا</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- الحقوق -->
+    <p class="text-center text-gray-500 text-xs flex items-center justify-center gap-1">
+      <span class="animate-bounce">👑</span> Dark King © 2025 جميع الحقوق محفوظة
+    </p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+
